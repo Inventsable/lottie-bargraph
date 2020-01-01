@@ -7,7 +7,7 @@
 ---
 
 - [AEP file](./graph.aep)
-- [Example lottie api registration]()
+- [Example lottie api registration](https://github.com/Inventsable/lottie-bargraph/blob/master/src/components/slottie.vue#L34-L61)
 - [Issue reference for slider controls in lottie-api](https://github.com/bodymovin/lottie-api/issues/6)
 
 ---

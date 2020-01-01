@@ -43,6 +43,8 @@ export default {
       // 'Effects' = Name of propGroup
       // 'x' = Name of Slider
       // '0' = Index of Slider (This isn't needed for other props, like 'graphValues,Transform,Position')
+      //   // Note that "index" here doesn't refer to the number of sliders. It will always be 0, it refers
+      //   // to the property within this propGroup (which is After Effects scripting-specific)
       //
       this.animAPI.addValueCallback(xSlider, currentVal => {
         // We don't need the current value, so we just override it with some given variable in scope

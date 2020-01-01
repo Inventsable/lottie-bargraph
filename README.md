@@ -2,7 +2,7 @@
 
 ![](./src/assets/screenshot.png)
 
-## Online demo here
+## [Online demo here](https://keen-noether-1fd6f1.netlify.com/#/)
 
 ---
 
@@ -29,6 +29,11 @@ Position:
 ```
 
 Notice that the y position and height use the same value, but the yPosition is effectively bumped up by half the offset value (creating the illusion of the bar only growing from the bottom up).
+
+Since lottie-api value callbacks happen after the animation mounts, it'd probably be best to:
+
+- Have no keyframes (since you must have the animation playing for the api to control it in realtime)
+- Have your bargraph values rendered starting at 0 (since there's a noticeable blink between their initial state and the value once the api hits)
 
 --- 
 
